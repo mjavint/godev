@@ -17,7 +17,7 @@ Imagen de desarrollo basada en Debian para proyectos de Go y Node.js.
 Desde la raíz del repo:
 
 ```bash
-docker build --pull -t godev:latest .
+docker build --pull -t godev:bookworm-slim .
 ```
 
 ## Ejecutar el contenedor para desarrollo
@@ -29,7 +29,7 @@ docker run --rm -it \
 	--name godev \
 	-v "$PWD":/workspace \
 	-v godev_history:/commandhistory \
-	godev:latest
+	godev:bookworm-slim
 ```
 
 ## Reconstruir y recrear el contenedor
@@ -39,12 +39,12 @@ Con el contenedor anterior corriendo, puedes hacerlo así:
 
 ```bash
 docker rm -f godev 2>/dev/null || true
-docker build --pull -t godev:latest .
+docker build --pull -t godev:bookworm-slim .
 docker run --rm -it \
 	--name godev \
 	-v "$PWD":/workspace \
 	-v godev_history:/commandhistory \
-	godev:latest
+	godev:bookworm-slim
 ```
 
 ## Configuración del entorno

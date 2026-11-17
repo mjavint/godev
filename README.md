@@ -4,8 +4,8 @@ Imagen de desarrollo basada en Debian para proyectos de Go y Node.js.
 
 ## Contenido de la imagen
 
-- Go `1.26.0`
-- Node.js `22.x`
+- Go `1.27.4`
+- Node.js `24.x`
 - pnpm vía `corepack`
 - PostgreSQL client
 - zsh + Oh My Zsh + plugins
